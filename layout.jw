@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{page.seo.desc}}">
+    <meta name="author" content="Joonweb">
+    <title>{{page.seo.title}}</title>
+    <link rel="canonical" href="{{current_url}}"/>
+
+    <!-- Reset Css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/reset.css">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preload" as="style" href="{{assets}}css/anim.css" />
+    <link defer rel="stylesheet" href="{{assets}}css/anim.css" />
+    
+    <!-- Slick css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/slick-theme.css">
+    <link rel="stylesheet" href="{{template_path}}/assets/slick.css">
+
+    <!-- Common Css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/common.css">
+    <!-- Navbar Css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/navbar.css">
+    
+    <!-- About Css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/about.css">
+    <!-- Slider Css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/slider.css">
+    <!-- Gallery Css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/gallery.css">
+    <!-- Service Css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/services.css">
+    <!-- Contact Css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/contact.css">
+    <!-- Insta Css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/insta.css">
+    <!-- Footer Css -->
+    <link rel="stylesheet" href="{{template_path}}/assets/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {{ header_content }}
+    <style>
+        :root{
+            --color1: {{ theme.colors.color1.value }};
+            --color2: {{ theme.colors.color2.value }};
+            --color3: {{ theme.colors.color3.value }};
+            --color4: {{ theme.colors.color4.value }};
+            --color5: {{ theme.colors.color5.value }};
+            --color6: {{ theme.colors.color6.value }};
+            --font-prime: '{{ theme.fonts.prime }}';
+            --font-second: '{{ theme.fonts.second }}';
+            --heading1: '{{ theme.headings.heading1 }}';
+            
+        }
+        {{ base_style }}
+    </style>
+</head>
+
+<body>
+    {{ base_content }}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="{{template_path}}assets/slick.js"></script>
+    <script type="text/javascript" src="{{template_path}}assets/navbar.js"></script>
+
+    <script>
+    $(function(){
+            $('.slide').slick({
+                dots: false,
+                autoplay: true,
+                arrows: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 400,
+                fade: true,
+                cssEase: 'ease-in',
+            });
+    
+            $('.fade2').slick({
+                dots: false,
+                autoplay: true,
+                arrows: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 400,
+                fade: true,
+                cssEase: 'ease-in',
+            });
+        });
+    </script>
+    {{ base_script }}
+</body>
+</html>

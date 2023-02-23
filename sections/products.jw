@@ -1,0 +1,170 @@
+<section {% if section.id %} id="{{section.id}}" {% endif %}  class="see-163 see-section products {{section.class}} {{section.colors ? section.colors : 'see-light-color'}} {{section.align ? 'see-text-' ~ section.align }} {{section.animation ? section.animation }}" {{section.attributes}} {% if media %} style="background: url({{media}})no-repeat center / cover;" {% endif %}>
+  <div class="see-full">
+    <div class="see-width">
+      <div class="pro-top">
+        {% if store.collection.title != '' %}<div class="see-title pro-title">{{store.collection.title}}</div>{% endif %}
+        {% if store.sort %}
+        <div class="filter-top">
+          <i class="fa fa-times" aria-hidden="true"></i>
+          <div class="filter-main">
+            <select name="jw_sort_callback">
+              <option value="{{store.sort.a_to_z}}">Alphabetically, A to Z</option>
+              <option value="{{store.sort.z_to_a}}">Alphabetically, Z to A</option>
+              <option value="{{store.sort.low_to_high}}">Price, Low to High</option>
+              <option value="{{store.sort.hight_to_low}}">Price, High to Low</option>
+              <option value="{{store.sort.old_to_new}}">Date, Old to New</option>
+              <option value="{{store.sort.new_to_old}}">Date, New To Old</option>
+            </select>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="mobile-menu-style">
+        <div class="sorting-menu">
+          <div class="mobile-filter ">
+            <div class="mobile-filter-inner">Filter </div>
+          </div>
+          <div class="mobile-sort">
+            <div class="mobile-sort-inner">Sort </div>
+          </div>
+        </div>
+        <div class="see-full filter-data">
+          {% if store.filter %}
+          <div class="filter-left">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <div class="filter-left-data see-full">
+              <div class="pos-sticky">
+                {% if store.filter.stock %}
+                <div class="filter-top-click">
+                  <span class="mob-click">Availability </span>
+                  <div class="mob-click-show">
+                    {% if store.filter.stock.in != '' %}<div class="instock">
+                    <input type="checkbox" id="instock_check" name="filter_stock" class="jw_filter_changer" value="instock"> 
+                    <label for="instock_check">in stock ({{store.filter.stock.in}})</label>
+                    </div>{% endif %}
+                    {% if store.filter.stock.out != '' %}<div class="instock">
+                    <input type="checkbox" id="outstock_check" name="filter_stock" class="jw_filter_changer" value="outofstock"> 
+                    <label for="outstock_check">out of stock({{store.filter.stock.out}})</label>
+                    </div>{% endif %}
+                  </div>
+                </div>
+                {% endif %}
+                {% if store.filter.price %}
+                <div class="wrapper">
+                  <fieldset class="filter-price">
+                    <span class="price-title mob-click">{{store.filter.label}}</span>
+                    <div class="mob-click-show">
+                      <div class="price-field">
+                        <input type="range" class="jw_filter_changer"  min="{{store.filter.price.min}}" max="{{store.filter.price.max}}" value="{{store.filter.price.min}}" id="lower">
+
+                        <input type="range" class="jw_filter_changer" min="{{store.filter.price.min}}" max="{{store.filter.price.max}}" value="{{store.filter.price.max}}" id="upper">
+                      </div>
+                      <div class="price-wrap">
+                        <div class="price-wrap-1">
+                          <label for="jw_filter_one">{{site.currency}}</label>
+                          <input id="jw_filter_one">
+                        </div>
+                        <div class="price-wrap_line">-</div>
+                        <div class="price-wrap-2 price-wrap-1">
+                          <label for="jw_filter_two">{{site.currency}}</label>
+                          <input id="jw_filter_two">
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset> 
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          {% endif %}
+
+          {% if store.products %}
+          <div class="filter-listing see-full">
+            <div class="filter-list-main">
+              {% for product in store.products %}
+              <div class="see-4 see-ltb-4 see-tb-6 see-sm-6 see-xsm-6 see-padding-24 see-padding-bottom-0 list">
+                <div class="see-full product-sec hove-change-img see-second-color">
+                  <a class="img" href="{{product.url}}"> 
+                    <img src="{{product.cover}}" alt="{{product.cover.alt}}" onerror="{{product.error_image}}" />
+                    <img src="{{product.media}}" alt="{{product.media.alt}}" onerror="{{product.error_image}}">
+                    {% if product.ribbon %}
+                    <span class="sale see-prime-color">{{product.ribbon}}</span>
+                    {% endif %}
+                  </a>
+                  <div class="details">
+                    {% if product.title %}
+                    <a class="see-full title" href="{{product.url}}"> 
+                      <div class="product-list-desc">
+                        <span class="theme-second-hover-text price-heading">{{product.title}}</span>
+                      </div> 
+                    </a>
+                    {% endif %}
+
+                    {% if product.rating_count %}
+                    <rating>
+                      {{product.rating_count}} 
+                      <svg version="1.1" width="14" height="14" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                        <polygon style="fill:#EFCE4A;" points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "/>
+                      </svg>
+                    </rating>
+                    {% endif %}
+                    <div class="see-full star theme-second-text "> 
+                      {% if product.price %}
+                      <span class="theme-second-text pro-price"> 
+                        {{site.currency}} {{product.price}}
+                      </span>
+                      {% endif %}
+
+                      {% if product.mrp %}<span class="cut-price">{{site.currency}} {{product.mrp}}</span>{% endif %}
+                      {% if product.discount %} 
+                      <span class="discount">{{product.discount}}</span> 
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="product-top-header">
+          <div class="see-widths">
+            {% if footer_description %} 
+            <div class="faq-desp desp">
+            {{footer_description}}
+            </div>
+            {% endif %}
+            {% if footer_buttons %}
+            <div class="see-button-prime btn btm">
+            {{footer_buttons}}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="product-top-bg">
+        <div class="product-top-header">
+          {% if store.collection.desc %}
+          <div class="see-subtitles pro-subtitle">{{store.collection.desc}}</div>
+          {% endif %}
+
+          {% if description %}
+          <div class="faq-desp desp">
+            {{description}}
+          </div>
+          {% endif %}
+          {% if buttons %}<div class="see-button-prime btn">
+          {{buttons}}
+          </div>{% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+  {#JW1#}
+</section>

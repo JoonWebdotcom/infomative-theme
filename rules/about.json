@@ -1,0 +1,121 @@
+{
+  "sections": {
+    "settings":[
+        {
+            "label":"Slider",
+            "id": "slider",
+            "type": "custom",
+            "elements":[
+                {
+                    "label": "Enable Slider",
+                    "id": "enable",
+                    "type": "select",
+                    "options":[
+                        {"label": "Yes", "value": "yes"},
+                        {"label":"No","value":"no"}
+                    ],
+                    "default": "no"
+                },
+                {
+                    "label": "Autoplay",
+                    "id": "enable",
+                    "type": "select",
+                    "options":[
+                        {"label": "Yes", "value": "yes"},
+                        {"label":"No","value":"no"}
+                    ],
+                    "default": "no"
+                }
+            ]
+        }
+    ],
+    "rules":{
+        "title": {
+          "label": "Big Headings",
+          "type": "text",
+          "show": "yes",
+          "default": "About US"
+        },
+        "title2": {
+          "label": "Title",
+          "type": "text",
+          "show": "yes",
+          "default": "Welcome to Website"
+        },
+        "subtitle": {
+          "label": "Subtitle",
+          "type": "quickEditor",
+          "show": "yes",
+          "default": "Hello dear welcome"
+        },
+        "description": {
+          "label": "Description",
+          "type": "simpleEditor",
+          "show": "yes",
+          "default": "This is a sample description hope you like it buddy"
+        },
+        "media1": {
+          "label": "First Media",
+          "type": "singlefile",
+          "show": "yes",
+          "varient":["video", "images"],
+          "settings":[
+            {
+                "label": "Media Settings",
+                "id": "media",
+                "elements":[
+                    {
+                        "label": "Media Type",
+                        "type": "options",
+                        "options":[
+                            {"label": "Images",  "value": "images"},
+                            {"label": "Video",  "value": "videos"}
+                        ],
+                        "default": "images"
+                    },
+                    {
+                        "label": "Opacity",
+                        "type": "range",
+                        "min":0,
+                        "max": 99,
+                        "default": "34"
+                    },
+                    {
+                        "label": "Bg Color",
+                        "type": "color_chooser",
+                        "colors":["#95000", "#95001"],
+                        "default": "34"
+                    },
+                    {
+                        "label": "Effect",
+                        "type": "options",
+                        "options":[
+                            {"label": "None",  "value": ""},
+                            {"label": "Fixed BG",  "value": "fixed"},
+                            {"label": "Parallax", "value": "parallax"}
+                        ],
+                        "default": "images"
+                    }
+                ]
+            }    
+        ]
+
+        },
+        "media2": {
+          "label": "Second Media",
+          "type": "singlefile",
+          "show": "yes"
+        },
+        "banner": {
+          "label": "ThirdMedia",
+          "type": "singlefile",
+          "show": "yes"
+        },
+        "banners": {
+          "label": "Mera Agla Rule",
+          "type": "singlefile",
+          "show": "yes"
+        }
+      }
+  }
+}

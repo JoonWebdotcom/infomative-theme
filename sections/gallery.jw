@@ -1,0 +1,37 @@
+
+<!-- Gallery -->
+<section id="{{section.id}}" class="section-pd site-gallery {{section.class}} {{section.colors ? section.colors : 'see-light-color'}}  {{section.align ? "see-text-#{section.align}" }} {{section.animation ? section.animation }}" style="background: url('./img/abstract/abstract3.png') no-repeat;" {{section.attributes}}>
+    <div class="container">
+        <div class="site-heading">
+            <h2>{{title}}</h2>
+            <p>{{subtitle}}</p>
+        </div>
+        <div class="gallery-content2 row">
+            {% if gallery %}
+            <div class="gallery-slider col-12 col-sm-12 col-md-6 col-lg-6 fade2">
+                {% for item in gallery %}
+                <div class="gallery-slider-item"><img src="{{item.img}}" alt="{{item.alt}}"></div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="gallery-right col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="gallery-text-border"></div>
+                <div class="gallery-text">
+                    <h2>See our <span class="highlighted-text">Gallery</span></h2>
+                    {% if description !='' %}
+                    <p>{{description}}</p>
+                    {% endif %}
+                </div>
+                <div class="gallery-text-border"></div>
+            </div>
+        </div>
+        <div class="text-center pd-fix">
+            {% if buttons %}
+                {{buttons}}
+            {% endif %}
+        </div>
+    </div>
+    {#JW1#}
+</section>
+<!-- Gallery End -->

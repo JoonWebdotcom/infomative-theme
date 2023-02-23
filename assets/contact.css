@@ -1,0 +1,218 @@
+.contact-banner {
+    background-size: cover;
+
+}
+
+.contact-wrap {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: calc(6%) calc(15%);
+}
+
+.contact-content h6 {
+    color: #fff;
+    font-size: var(--font-lg);
+}
+
+.contact-content p {
+    color: #bbb;
+    width: 80%;
+    margin: 0 auto 40px auto;
+}
+
+.contact-btn {
+    padding: 10px 80px;
+}
+
+/* Contact Page */
+.contact2 {
+    padding: calc(5%) 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.contact2>div {
+    width: 48%;
+    padding: 20px;
+}
+
+.contact2-form input,
+.contact2-form textarea {
+    border: 1px solid var(--light-orange);
+    border-radius: 0;
+    background: transparent;
+}
+
+.contact2-form input::placeholder {
+    font-size: 12px;
+}
+
+.contact2-form input:focus,
+.contact2-form textarea:focus {
+    border: 1px solid var(--light-blue);
+    border-radius: 0;
+    outline: none;
+}
+
+.contact2-item {
+    background: var(--orange);
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+
+
+.contact2-icon {
+    font-size: 20px;
+    color: var(--white);
+    padding: 12px;
+}
+
+.contact2-text {
+    font-size: 11px;
+}
+
+.contact2-address {
+    background-size: cover;
+    width: 100%;
+}
+
+.pd-5 {
+    padding: 5px !important;
+}
+
+/* Responsive Css */
+
+@media(max-width:1024px) {
+    .contact2-text {
+        font-size: 9px;
+    }
+}
+
+@media(max-width:992px) {
+    .contact-content h6 {
+        font-size: var(--font-lg2);
+    }
+
+    .contact-content p {
+        width: 85%;
+    }
+
+    .contact-content h6 {
+        font-size: 12vh;
+    }
+
+    .contact-btn {
+        padding: 10px 70px;
+    }
+
+}
+
+@media(max-width:912px) {
+    .contact-content h6 {
+        font-size: 7vh;
+    }
+    .contact2-item {
+        padding: 12px;
+    }
+
+    .contact2-text {
+        font-size: 9px;
+    }
+}
+
+@media(max-width:820px) {
+    .contact-content h6 {
+        font-size: 6vh;
+    }
+    .contact2-item {
+        padding: 10px;
+    }
+    .contact2-text {
+        font-size: 9px;
+    }
+}
+
+@media(max-width:768px) {
+
+
+    .contact-content p {
+        width: 100%;
+    }
+
+    .contact-content h6 {
+        font-size: 8vh;
+    }
+
+    .contact-btn {
+        padding: 10px 60px;
+    }
+
+    .contact2>div {
+        width: 99%;
+    }
+
+    .contact2-icon {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .contact2-text {
+        font-size: 10px;
+    }
+
+    .contact2 {
+        padding: 0;
+    }
+}
+
+
+@media(max-width:653px) {}
+
+@media(max-width:516px) {
+
+    .contact-content h6 {
+        font-size: 4vh;
+    }
+
+    .contact-btn {
+        padding: 10px 40px;
+    }
+
+    .contact-content p {
+        font-size: 11px;
+    }
+
+    .contact2-item {
+        padding: 12px;
+    }
+
+    .contact2-icon {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .contact2-text {
+        font-size: 8px;
+    }
+}
+
+
+
+@media(max-width:414px) {}
+
+@media(max-width:375px) {}
+
+@media(max-width:280px) {
+    .contact2-item {
+        border-top-left-radius: 0;
+    }
+    .contact-content p {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,50 @@
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255, .9) !important;
+}
+
+.navbar-scroll-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.main-navbar .nav-link {
+    font-size: 18px;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    padding-right: 0.8rem !important;
+    padding-left: 0.8rem !important;
+}
+
+.navbar-brand img{height: 60px;}
+
+@media(max-width:912px) {}
+
+@media(max-width:820px) {}
+
+@media(max-width:768px) {}
+
+@media(max-width:653px) {}
+
+@media(max-width:512px) {}
+
+@media(max-width:414px) {
+    .navbar-toggler{
+        font-size: 0.8rem;
+    }
+    .navbar-brand img{height: 40px;}
+}
+
+@media(max-width:375px) {
+    .navbar-toggler{
+        font-size: 0.8rem;
+    }
+    .navbar-brand img{height: 40px;}
+}
+
+@media(max-width:280px) {}

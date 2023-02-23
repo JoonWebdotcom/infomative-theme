@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="{{ assets ~ 'product_list.css'  }}" media="print" onload="this.media='all'">
+<section {% if section.id %} id="{{section.id}}" {% endif %} class="see-225 see-section products see-full {{section.class}} {{section.colors ? section.colors : ''}} {{section.align ? 'see-text-' ~ section.align }} {{section.animation ? section.animation }}" {{section.attributes}} {% if media %} style="background: url({{media}})no-repeat center / cover;" {% endif %}>
+      <div class="see-width">
+        {% if title or subtitle or description %}
+        <div class="product-top-bg">
+          <div class="product-top-header">
+            {% if title != '' %}<div class="see-title pro-title">{{title}}</div>{% endif %}
+            {% if subtitle != '' %}<div class="see-subtitle pro-subtitle">{{subtitle}}</div>{% endif %}
+            {% if description != '' %}<div class="faq-desp desp">{{description}}</div>{% endif %}
+          </div>
+        </div>
+        {% endif %}
+       
+        {% if store.products %}
+            <div class="see-full filter-data mySlides see-list-slider">
+            {% for product in store.products %}
+                <div class="see-3 see-ltb-3 see-tb-3 see-sm-4 see-xsm-6 see-padding-24 see-padding-bottom-0 list">
+                    <div class="see-full product-sec hove-change-img see-second-colors">
+                        <a class="img" href="{{product.url}}">
+                        <div class="feed-media">
+                            {% if product.cover %}
+                            <img src="{{product.cover}}" alt="{{product.cover.alt}}" onerror="{{product.error_image}}" class="normal-img">
+                            {% endif %}
+                            {% if product.media %}<img src="{{product.media}}" alt="{{product.media.alt}}" onerror="{{product.error_image}}" class="hover-img">{% endif %}
+                            {% if product.ribbon %}
+                            <span class="sale see-prime-color">{{product.ribbon}}</span>{% endif %}
+                        </div>
+                        </a>
+                        <div class="details">
+                            <a class="see-fullss title" href="{{product.url}}">
+                            {% if product.title %}<div class="product-list-desc"><span class="theme-second-hover-text price-heading">{{product.title}}</span></div>{% endif %}
+                                </a>
+                        <div class="see-fullss star theme-second-text "> <span   class="theme-second-text p-price">{{site.currency}} {{product.price}}</span>
+                            {% if product.mrp %}<span class="cut-price">{{site.currency}} {{product.mrp}}</span>{% endif %}
+                            {% if product.discount %}<span class="discount">{{store.listing.discount}}</span></div>{% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        {% else %}
+            <strong> Oops No Products available </strong>
+        {% endif %}    
+        <div class="product-top-header">
+            <div class="see-widths">
+                {% if buttons %}
+                <div class="see-button-prime btn btm">
+                    {{buttons}}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+      </div>
+  {#JW1#}
+</section>

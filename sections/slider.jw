@@ -1,0 +1,28 @@
+<!-- Slider -->
+<section id="{{section.id}}" class="section-bd {{section.class}} {{section.colors ? section.colors : ''}} {{section.align ? 'see-text-' ~ section.align }} {{section.animation ? section.animation }}" {{section.attributes}}>
+    <div class="travel-slider slide">
+        {% if listitem %}
+        <!-- Slider Start -->
+        {% for itemkey, item in listitem %}
+        <div class="travel-slider-item">
+            <img src="{{item.media}}" alt="{{item.media.alt}}">
+            <div class="slider-content text-center">
+                <div class="slider-overlay">
+                    <div class="slider-caption">
+                        <h1 class="slider-heading">{{item_name}}</h1>
+                        <p class="slider-description">{{item_decription}}</p>
+                        <div class="d-flex justify-content-center">
+                            {{items.buttons}}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+         <!-- Slider End -->
+        {% endif %}
+    </div>
+    {#JW1#}
+</section>
+<!-- Slider End -->

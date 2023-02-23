@@ -1,0 +1,27 @@
+<!-- Services -->
+<section id="{{section.id}}" class="{{section.class}} {{section.colors ? section.colors : 'see-light-color'}}  {{section.align ? "see-text-#{section.align}" }} {{section.animation ? section.animation }} section-pd our-services"  {{section.attributes}}>
+    <div class="container">
+        <div class="site-heading">
+            {% if title !='' %}<h2>{{title}}</h2>{% endif %}
+            {% if subtitle !='' %}<p>{{subtitle}}</p>{% endif %}
+        </div>
+        {% if listitem %}
+        <div class="service-content">
+            {% for itemkey, items in listitem %}
+                {% if items.media %}
+                    <div class="service-item img-item">
+                        <img src="{{items.media}}" alt="">
+                    </div>
+                {% endif %}
+            <div class="service-item text-item">
+                {% if items.item_name %}<h6>{{items.item_name}}</h6>{% endif %}
+                {% if items.item_decription %}  <p>{{items.item_decription}}</p>{% endif %}
+                {{items.buttons}}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    {#JW1#}
+</section>
+<!-- Services End-->

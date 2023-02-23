@@ -1,0 +1,31 @@
+<!-- About -->
+<section id="{{section.id}}" class="section-pd about-us {{section.class}} {{section.colors ? section.colors : 'see-light-color'}}  {{section.align ? "see-text-#{section.align}" }} {{section.animation ? section.animation }}" {{section.attributes}}>
+    <div class="container">
+        {% if title != '' and subtitle != '' %}
+        <div class="site-heading mb-5vh">
+            {% if title !='' %}<h2>{{title}}</h2>{% endif %}
+            {% if subtitle !='' %}<p>{{subtitle}}</p>{% endif %}
+        </div>
+        {% endif %}
+        <div class="row about-wrap">
+            <div class="about-content col-9 col-sm-10 col-md-6 col-lg-4">
+                <h6>{{title2}}</h6>
+                <p>{{description}}</p>
+                {% if buttons %}
+                    {{buttons}}
+                {% endif %}
+            </div>
+            <div class="d-none d-sm-block col-sm-6 col-md-6 col-lg-8 about-content2">
+                <div class="about-media d-flex justify-content-center">
+                    <img src="{{media1}}" alt="">
+                    <img src="{{media2}}" alt="">
+                    <img src="{{banner}}" alt="">
+                    <img src="{{banners}}" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {#JW1#}
+</section>
+<!-- About End -->

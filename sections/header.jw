@@ -1,0 +1,30 @@
+<!-- Navbar Section -->
+<header id="{{section.id}}" class="{{section.class}} {{section.colors ? section.colors : 'see-prime-color'}} {{section.align ? 'see-text-' ~ section.align }} {{section.animation ? section.animation }}" {{section.attributes}}>
+    <div class="main-navbar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="{{root.url}}"><img src="{{logo}}" /></a>
+            <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                {% if section.navigation %}
+                <ul class="navbar-nav mlr-auto">
+                    {% for navkey, menu in section.navigation %}
+                    <li class="nav-item {{current_url == menu.link ? 'active'}}">
+                        <a class="nav-link" href="{{menu.link}}">{{menu.label}}<span class="sr-only">(current)</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if buttons %}
+                    {{buttons}}
+                {% endif %}
+            </div>
+        </nav>
+    </div>
+    {#JW1#}
+</header>
+<!-- Navbar End -->

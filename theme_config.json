@@ -1,0 +1,75 @@
+{
+    "default": {
+        "headings": {
+            "heading1": {
+                "label": "Heading 1",
+                "font-family": "Arial",
+                "font-size": "30px"
+            },
+            "heading2": {
+                "label": "Heading 2",
+                "font-family": "Arial",
+                "font-size": "28px"
+            },
+            "heading3": {
+                "label": "Heading 3",
+                "font-family": "Arial",
+                "font-size": "26px"
+            },
+            "heading4": {
+                "label": "Heading 4",
+                "font-family": "Arial",
+                "font-size": "25px"
+            },
+            "heading5": {
+                "label": "Heading 5",
+                "font-family": "Arial",
+                "font-size": "24px"
+            },
+            "heading6": {
+                "label": "Heading 6",
+                "font-family": "Arial",
+                "font-size": "20px"
+            },
+            "paragraph1": {
+                "label": "Paragraph 1",
+                "font-family": "Arial",
+                "font-size": "16px"
+            },
+            "paragraph2": {
+                "label": "Paragraph 2",
+                "font-family": "Arial",
+                "font-size": "14px"
+            },
+            "paragraph3": {
+                "label": "Paragraph 3",
+                "font-family": "Arial",
+                "font-size": "12px"
+            }
+        },
+        "colors": {
+            "color1": {
+                "value": "#ffbeac"
+            },
+            "color2": {
+                "value": "#ffefec"
+            },
+            "color3": {
+                "value": "#b32121"
+            },
+            "color4": {
+                "value": "#945151"
+            },
+            "color5": {
+                "value": "#3e4a4f"
+            },
+            "color6": {
+                "value": "#d62828"
+            }
+        },
+        "fonts":{
+            "prime": "Arial",
+            "second":"Ubuntu"
+        }
+    }
+}

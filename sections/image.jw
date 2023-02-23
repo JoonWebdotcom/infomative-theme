@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ assets ~ 'image_section.css'  }}" media="print" onload="this.media='all'">
+<section {% if section.id %} id="{{section.id}}" {% endif %}  class="see-full img-section see-219 {{section.class}} {{section.colors ? section.colors : 'see-prime-color'}} {{section.align ? 'see-text-' ~ section.align }} {{section.animation ? section.animation }}" {{section.attributes}}>
+    <div class="img-main">
+      {% if media %}
+      <div class="img-media {{class.media}}" {{attributes.media}}>
+        {% if Property.media.varient == 0 or Property.media.varient == 1 %}
+          {# Property.media.hreflink #}
+        <img src="{{media}}" alt="{{media.alt}}" {{Property.media.effect ?  'data-parallax="scroll" data-speed="0"' : ''}}>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% if title != '' or subtitle != '' or description != '' %}
+     <div class="see-width">
+        <div class="img-overlays  see-prime-color"></div>
+        <div class="img-content">
+          {% if title != "" %}<div class="see-title img-title">{{title}}</div>{% endif %}
+          {% if subtitle != "" %}<div class="see-subtitle img-subtitle">{{subtitle}}</div> {% endif %}
+          {% if description != "" %}<div class="see-descr img-desc">{{description}}</div> {% endif %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  {#JW1#}
+</section>

@@ -1,0 +1,37 @@
+<!-- Footer -->
+<footer>
+    <div class="footer2 section-pd text-center">
+        <div class="container">
+            <div class="footer2-wrap row">
+                <div class="footer-map col-12 col-sm-12 col-md-6 col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9918356671647!2d77.07757691452292!3d28.630006790947334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4575d275643%3A0x6374f0c539bcb978!2sJoon%20Corporation%20-%20Website%20designing%20company%20in%20Delhi!5e0!3m2!1sen!2sin!4v1676435795705!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="footer-content col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="social-media">
+                        <h6>Follow Us:</h6>
+                        <a href="" class="btn primary-btn"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="btn primary-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="btn primary-btn"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="btn primary-btn"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                    <div class="info-list">
+                        
+                        <p><a href="mailto:contact@business.com">{{ site.email[0].data }}</a></p>
+                        <p><a href="tel:+91-8709879812">{{ site.phone[0].data }}</a></p>
+                        <p><a href="https://business.com">www.business.com</a></p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="footer2-bottom">
+            <p class="text-center">2020 All Rights Reserved. Powered by Joonweb Corporation</p>
+        </div>
+
+    </div>
+    {#JW1#}
+</footer>
+<!-- Footer End-->
