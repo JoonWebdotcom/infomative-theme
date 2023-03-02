@@ -54,67 +54,10 @@
           "show": "yes",
           "default": "This is a sample description hope you like it buddy"
         },
-        "media1": {
+        "media": {
           "label": "First Media",
           "type": "singlefile",
           "show": "yes",
-          "varient":["video", "images"],
-          "settings":[
-            {
-                "label": "Media Settings",
-                "id": "media",
-                "elements":[
-                    {
-                        "label": "Media Type",
-                        "type": "options",
-                        "options":[
-                            {"label": "Images",  "value": "images"},
-                            {"label": "Video",  "value": "videos"}
-                        ],
-                        "default": "images"
-                    },
-                    {
-                        "label": "Opacity",
-                        "type": "range",
-                        "min":0,
-                        "max": 99,
-                        "default": "34"
-                    },
-                    {
-                        "label": "Bg Color",
-                        "type": "color_chooser",
-                        "colors":["#95000", "#95001"],
-                        "default": "34"
-                    },
-                    {
-                        "label": "Effect",
-                        "type": "options",
-                        "options":[
-                            {"label": "None",  "value": ""},
-                            {"label": "Fixed BG",  "value": "fixed"},
-                            {"label": "Parallax", "value": "parallax"}
-                        ],
-                        "default": "images"
-                    }
-                ]
-            }    
-        ]
-
-        },
-        "media2": {
-          "label": "Second Media",
-          "type": "singlefile",
-          "show": "yes"
-        },
-        "banner": {
-          "label": "ThirdMedia",
-          "type": "singlefile",
-          "show": "yes"
-        },
-        "banners": {
-          "label": "Mera Agla Rule",
-          "type": "singlefile",
-          "show": "yes"
         }
       }
   }
