@@ -18,9 +18,6 @@
             <div class="d-none d-sm-block col-sm-6 col-md-6 col-lg-8 about-content2">
                 <div class="about-media d-flex justify-content-center">
                     <img src="{{media1}}" alt="">
-                    <img src="{{media2}}" alt="">
-                    <img src="{{banner}}" alt="">
-                    <img src="{{banners}}" alt="">
                 </div>
             </div>
 
