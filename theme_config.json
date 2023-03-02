@@ -1,4 +1,11 @@
 {
+    "info":{
+        "name": "Default",
+        "version": "1.0.0",
+        "author": "JoonWeb",
+        "support_url": "",
+        "license": "free"
+    },
     "default": {
         "headings": {
             "heading1": {
