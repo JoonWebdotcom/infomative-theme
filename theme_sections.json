@@ -1,5 +1,10 @@
 {
-    "about":["about","about-2"],
-    "services":["service"],
-    "custom":[]
+    "about":{
+        "label": "About Us",
+        "sections":["about","about-2"]
+    },
+    "services":{
+        "label": "Services",
+        "sections":["services"]
+    }
 }
