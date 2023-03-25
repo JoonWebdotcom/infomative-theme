@@ -1,17 +1,17 @@
 {
-    "info":{
-        "name": "Default",
-        "version": "1.0.0",
+    "info": {
+        "name": "SampleTheme",
+        "version": "1.0.1",
         "author": "JoonWeb",
-        "support_url": "",
+        "support_url": "https://dev.joonweb.com/themes/template-architecture",
         "license": "free"
     },
     "default": {
-        "headings": {
+        "fontStyle": {
             "heading1": {
                 "label": "Heading 1",
                 "font-family": "Arial",
-                "font-size": "30px"
+                "font-size": "40px"
             },
             "heading2": {
                 "label": "Heading 2",
@@ -56,27 +56,33 @@
         },
         "colors": {
             "color1": {
-                "value": "#ffbeac"
+                "label": "Main Color",
+                "value": "#524D82"
             },
             "color2": {
-                "value": "#ffefec"
+                "label": "Second Color",
+                "value": "#f9bc33"
             },
             "color3": {
-                "value": "#b32121"
+                "label": "Third Color",
+                "value": "#e45826"
             },
             "color4": {
-                "value": "#945151"
+                "label": "Light Color",
+                "value": "#ffffff"
             },
             "color5": {
-                "value": "#3e4a4f"
+                "label": "Text Color",
+                "value": "#000000"
             },
             "color6": {
+                "label": "Background Color",
                 "value": "#d62828"
             }
         },
-        "fonts":{
-            "prime": "Arial",
-            "second":"Ubuntu"
+        "fonts": {
+            "prime": "Ubuntu",
+            "second": "Mukta Vaani"
         }
     }
 }
