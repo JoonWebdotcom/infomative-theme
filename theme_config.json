@@ -68,15 +68,15 @@
                 "value": "#e45826"
             },
             "color4": {
-                "label": "Light Color",
+                "label": "Background Color",
                 "value": "#ffffff"
             },
             "color5": {
-                "label": "Text Color",
+                "label": "Light Color",
                 "value": "#000000"
             },
             "color6": {
-                "label": "Background Color",
+                "label": "Dark Color",
                 "value": "#d62828"
             }
         },
