@@ -58,7 +58,7 @@
             --color6: {{ theme.colors.color6.value }};
             --font-prime: '{{ theme.fonts.prime }}';
             --font-second: '{{ theme.fonts.second }}';
-            --heading1: '{{ theme.headings.heading1 }}';
+            --heading1: '{{ theme.fontStyle.heading1['font-size'] }}';
             
         }
         {{ base_style }}
