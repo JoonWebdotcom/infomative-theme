@@ -8,48 +8,48 @@
     },
     "default": {
         "fontStyle": {
-            "heading1": {
-                "label": "Heading 1",
+            "fontStyle1": {
+                "label": "Style 1",
                 "font-family": "Arial",
                 "font-size": "40px"
             },
-            "heading2": {
-                "label": "Heading 2",
+            "fontStyle2": {
+                "label": "Style 2",
                 "font-family": "Arial",
                 "font-size": "28px"
             },
-            "heading3": {
-                "label": "Heading 3",
+            "fontStyle3": {
+                "label": "Style 3",
                 "font-family": "Arial",
                 "font-size": "26px"
             },
-            "heading4": {
-                "label": "Heading 4",
+            "fontStyle4": {
+                "label": "Style 4",
                 "font-family": "Arial",
                 "font-size": "25px"
             },
-            "heading5": {
-                "label": "Heading 5",
+            "fontStyle5": {
+                "label": "Style 5",
                 "font-family": "Arial",
                 "font-size": "24px"
             },
-            "heading6": {
-                "label": "Heading 6",
+            "fontStyle6": {
+                "label": "Style 6",
                 "font-family": "Arial",
                 "font-size": "20px"
             },
-            "paragraph1": {
-                "label": "Paragraph 1",
+            "fontStyle7": {
+                "label": "Style 7",
                 "font-family": "Arial",
                 "font-size": "16px"
             },
-            "paragraph2": {
-                "label": "Paragraph 2",
+            "fontStyle8": {
+                "label": "Style 8",
                 "font-family": "Arial",
                 "font-size": "14px"
             },
-            "paragraph3": {
-                "label": "Paragraph 3",
+            "fontStyle9": {
+                "label": "Style 9",
                 "font-family": "Arial",
                 "font-size": "12px"
             }
@@ -79,10 +79,6 @@
                 "label": "Dark Color",
                 "value": "#d62828"
             }
-        },
-        "fonts": {
-            "prime": "Ubuntu",
-            "second": "Mukta Vaani"
         }
     }
 }
