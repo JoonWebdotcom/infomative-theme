@@ -2,6 +2,7 @@
     "info": {
         "name": "SampleTheme",
         "version": "1.0.1",
+        "type":"site",
         "author": "JoonWeb",
         "support_url": "https://dev.joonweb.com/themes/template-architecture",
         "license": "free"
