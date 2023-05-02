@@ -9,6 +9,11 @@
             "sections": ["about"]
         },
         {
+            "name":"Blog",
+            "type":"blog",
+            "sections": ["blog"]
+        },
+        {
             "name":"Services",
             "sections": ["services"]
         },
