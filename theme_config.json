@@ -1,85 +1,101 @@
 {
-    "info": {
-        "name": "SampleTheme",
-        "version": "1.0.1",
-        "type":"site",
-        "author": "JoonWeb",
-        "support_url": "https://dev.joonweb.com/themes/template-architecture",
-        "license": "free"
+  "info": {
+    "name": "SampleTheme",
+    "version": "1.0.1",
+    "type": "site",
+    "author": "JoonWeb",
+    "support_url": "https://dev.joonweb.com/themes/template-architecture",
+    "license": "free"
+  },
+  "default": {
+    "fontStyle": {
+      "fontStyle1": {
+        "label": "Style 1",
+        "font-family": "Arial",
+        "font-size": "40px"
+      },
+      "fontStyle2": {
+        "label": "Style 2",
+        "font-family": "Arial",
+        "font-size": "28px"
+      },
+      "fontStyle3": {
+        "label": "Style 3",
+        "font-family": "Arial",
+        "font-size": "26px"
+      },
+      "fontStyle4": {
+        "label": "Style 4",
+        "font-family": "Arial",
+        "font-size": "25px"
+      },
+      "fontStyle5": {
+        "label": "Style 5",
+        "font-family": "Arial",
+        "font-size": "24px"
+      },
+      "fontStyle6": {
+        "label": "Style 6",
+        "font-family": "Arial",
+        "font-size": "20px"
+      },
+      "fontStyle7": {
+        "label": "Style 7",
+        "font-family": "Arial",
+        "font-size": "16px"
+      },
+      "fontStyle8": {
+        "label": "Style 8",
+        "font-family": "Arial",
+        "font-size": "14px"
+      },
+      "fontStyle9": {
+        "label": "Style 9",
+        "font-family": "Arial",
+        "font-size": "12px"
+      }
     },
-    "default": {
-        "fontStyle": {
-            "fontStyle1": {
-                "label": "Style 1",
-                "font-family": "Arial",
-                "font-size": "40px"
-            },
-            "fontStyle2": {
-                "label": "Style 2",
-                "font-family": "Arial",
-                "font-size": "28px"
-            },
-            "fontStyle3": {
-                "label": "Style 3",
-                "font-family": "Arial",
-                "font-size": "26px"
-            },
-            "fontStyle4": {
-                "label": "Style 4",
-                "font-family": "Arial",
-                "font-size": "25px"
-            },
-            "fontStyle5": {
-                "label": "Style 5",
-                "font-family": "Arial",
-                "font-size": "24px"
-            },
-            "fontStyle6": {
-                "label": "Style 6",
-                "font-family": "Arial",
-                "font-size": "20px"
-            },
-            "fontStyle7": {
-                "label": "Style 7",
-                "font-family": "Arial",
-                "font-size": "16px"
-            },
-            "fontStyle8": {
-                "label": "Style 8",
-                "font-family": "Arial",
-                "font-size": "14px"
-            },
-            "fontStyle9": {
-                "label": "Style 9",
-                "font-family": "Arial",
-                "font-size": "12px"
-            }
-        },
-        "colors": {
-            "color1": {
-                "label": "Main Color",
-                "value": "#524D82"
-            },
-            "color2": {
-                "label": "Second Color",
-                "value": "#f9bc33"
-            },
-            "color3": {
-                "label": "Third Color",
-                "value": "#e45826"
-            },
-            "color4": {
-                "label": "Background Color",
-                "value": "#ffffff"
-            },
-            "color5": {
-                "label": "Light Color",
-                "value": "#000000"
-            },
-            "color6": {
-                "label": "Dark Color",
-                "value": "#d62828"
-            }
-        }
+    "colors": {
+      "color1": {
+        "label": "Main Color",
+        "value": "#524D82"
+      },
+      "color2": {
+        "label": "Second Color",
+        "value": "#f9bc33"
+      },
+      "color3": {
+        "label": "Third Color",
+        "value": "#e45826"
+      },
+      "color4": {
+        "label": "Background Color",
+        "value": "#ffffff"
+      },
+      "color5": {
+        "label": "Light Color",
+        "value": "#000000"
+      },
+      "color6": {
+        "label": "Dark Color",
+        "value": "#d62828"
+      }
     }
+  },
+  "presets": [
+    {
+      "label": "Default",
+      "sets": {
+        "fontStyle": {},
+        "colors": {}
+      }
+    },
+    {
+      "label": "Warm",
+      "sets": {
+        "fontStyle": {},
+        "colors": {}
+      }
+    }
+  ]
 }
