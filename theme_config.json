@@ -85,14 +85,14 @@
   "presets": [
     {
       "label": "Default",
-      "sets": {
+      "set": {
         "fontStyle": {},
         "colors": {}
       }
     },
     {
       "label": "Warm",
-      "sets": {
+      "set": {
         "fontStyle": {},
         "colors": {}
       }
