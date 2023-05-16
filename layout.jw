@@ -56,9 +56,16 @@
             --color4: {{ theme.colors.color4.value }};
             --color5: {{ theme.colors.color5.value }};
             --color6: {{ theme.colors.color6.value }};
-            --font-prime: '{{ theme.fonts.prime }}';
-            --font-second: '{{ theme.fonts.second }}';
-            --heading1: '{{ theme.fontStyle.heading1['font-size'] }}';
+           
+           --fontStyle1 : normal normal {{theme.fontStyle.fontStyle1['font-weight']}} {{theme.fontStyle.fontStyle1['font-size']}} {{theme.fontStyle.fontStyle1['font-family']}};
+            --fontStyle2 : normal normal {{theme.fontStyle.fontStyle2['font-weight']}} {{theme.fontStyle.fontStyle2['font-size']}} {{theme.fontStyle.fontStyle2['font-family']}};
+            --fontStyle3 : normal normal {{theme.fontStyle.fontStyle3['font-weight']}} {{theme.fontStyle.fontStyle3['font-size']}} {{theme.fontStyle.fontStyle3['font-family']}};
+            --fontStyle4 : normal normal {{theme.fontStyle.fontStyle4['font-weight']}} {{theme.fontStyle.fontStyle4['font-size']}} {{theme.fontStyle.fontStyle4['font-family']}};
+            --fontStyle5 : normal normal {{theme.fontStyle.fontStyle5['font-weight']}} {{theme.fontStyle.fontStyle5['font-size']}} {{theme.fontStyle.fontStyle5['font-family']}};
+            --fontStyle6 : normal normal {{theme.fontStyle.fontStyle6['font-weight']}} {{theme.fontStyle.fontStyle6['font-size']}} {{theme.fontStyle.fontStyle6['font-family']}};
+            --fontStyle7 : normal normal {{theme.fontStyle.fontStyle7['font-weight']}} {{theme.fontStyle.fontStyle7['font-size']}} {{theme.fontStyle.fontStyle7['font-family']}};
+            --fontStyle8 : normal normal {{theme.fontStyle.fontStyle8['font-weight']}} {{theme.fontStyle.fontStyle8['font-size']}} {{theme.fontStyle.fontStyle8['font-family']}};
+            --fontStyle9 : normal normal {{theme.fontStyle.fontStyle9['font-weight']}} {{theme.fontStyle.fontStyle9['font-size']}} {{theme.fontStyle.fontStyle9['font-family']}};
             
         }
         {{ base_style }}
