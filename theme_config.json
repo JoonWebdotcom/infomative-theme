@@ -87,6 +87,7 @@
     {
       "label": "Default",
       "set": {
+        "fontUnit":"rem",
         "fontStyle": {},
         "colors": {}
       }
@@ -94,6 +95,7 @@
     {
       "label": "Warm",
       "set": {
+        "fontUnit":"rem",
         "fontStyle": {},
         "colors": {}
       }
