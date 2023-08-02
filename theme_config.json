@@ -8,6 +8,7 @@
     "license": "free"
   },
   "default": {
+    "fontUnit":"rem",
     "fontStyle": {
       "fontStyle1": {
         "label": "Style 1",
